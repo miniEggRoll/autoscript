@@ -1,3 +1,6 @@
+branches:
+  only:
+    - master
 script: echo "no test"
 after_success:
   - bash deploy.sh
