@@ -3,7 +3,7 @@ cd travis-gce/jobs
 for VARIABLE in `find . -maxdepth 1 -mindepth 1 -type d \! -exec test -e '{}/report.log' \; -print`
 do
     cd $VARIABLE
-    sh start.sh > report.log
+    sh start.sh | tee report.log
     cd ..
 done
 cd ..
