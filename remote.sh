@@ -8,6 +8,7 @@ do
 done
 cd ..
 touch .git/config
+git config --local user.name "travis-aftersuccess"
 git add .
 git commit -m 'auto exec' 
 git push
