@@ -13,4 +13,6 @@ git add .
 git commit -m 'auto exec' 
 git push
 cd ..
-rm -rf travis-gce
+sudo rm -rf travis-gce
+docker ps -a | grep Exited | awk '{print $1}' | xargs docker rm
+docker images | grep none | awk '{print $3}' | xargs docker rmi
