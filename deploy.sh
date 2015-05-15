@@ -1,5 +1,5 @@
 echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-env | grep ^LC_ | while read line; do echo "SendEnv $line"; done >> ~/.ssh/config
+printenv | grep XPC | awk -F'=' '{print $1}'  >> ~/.ssh/config
 
 echo -e "$BASTION_KEY" > ~/.ssh/id_rsa_gce
 echo -e "$GIT_KEY" > ~/.ssh/id_rsa
