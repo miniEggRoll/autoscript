@@ -5,4 +5,4 @@ docker run -w="/app" \
     -e LC_SABRINA_USER=`echo $LC_SABRINA_USER` \
     -e LC_SABRINA_PASSWORD=`echo $LC_SABRINA_PASSWORD` \
     -v `pwd`:/app node:0.12.2-wheezy \
-    bash -c "npm install && npm start"
+    bash -c "npm install && npm run th && npm run hk"
