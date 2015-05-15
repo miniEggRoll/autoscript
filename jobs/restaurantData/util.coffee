@@ -101,7 +101,7 @@ module.exports =
                 .replace /↵+/g, '\n'
 
                 yield (done)->
-                    fs.writeFile "#{__dirname}/sql/#{locales.join('_')}.sql", query, done
+                    fs.writeFile "#{__dirname}/#{locales.join('_')}.sql", query, done
             .then ->
                 do pool.end
 
