@@ -1,0 +1,22 @@
+co@4.5.4 node_modules/co
+
+underscore@1.8.3 node_modules/underscore
+
+coffee-script@1.9.2 node_modules/coffee-script
+
+rsvp@3.0.18 node_modules/rsvp
+
+mysql@2.6.2 node_modules/mysql
+├── require-all@1.0.0
+├── bignumber.js@2.0.7
+└── readable-stream@1.1.13 (isarray@0.0.1, inherits@2.0.1, string_decoder@0.10.31, core-util-is@1.0.1)
+
+fast-csv@0.6.0 node_modules/fast-csv
+├── is-extended@0.0.10
+├── object-extended@0.0.7 (array-extended@0.0.11)
+├── string-extended@0.0.8 (date-extended@0.0.6, array-extended@0.0.11)
+└── extended@0.0.6 (extender@0.0.10)
+
+> restaurantData@1.0.0 start /app
+> coffee --nodejs --harmony index.coffee
+
