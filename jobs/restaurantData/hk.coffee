@@ -16,8 +16,8 @@ co ->
     mapping = mapper 'zh_HK', filename
     .then (restautants)->
         restautants.map (r)->
-            appendEN = if r.id in hackIDs then " (Contents and images are rightfully owned by #{r.name.en_US]}, if there is any concern, please contact us.)" else ''
-            appendHK = if r.id in hackIDs then " (相關文字與圖片為 #{r.name.zh_HK]} 所有，若有侵權敬請告知)" else ''
+            appendEN = if r.id in hackIDs then " (Contents and images are rightfully owned by #{r.name.en_US}, if there is any concern, please contact us.)" else ''
+            appendHK = if r.id in hackIDs then " (相關文字與圖片為 #{r.name.zh_HK} 所有，若有侵權敬請告知)" else ''
 
             r.intro1.en_US += appendEN
             r.intro1.zh_HK += appendHK
