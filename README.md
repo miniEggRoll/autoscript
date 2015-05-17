@@ -1,4 +1,4 @@
-# travis-gce
+# autoscript
 Auto execute jobs/*/start.sh on merge.
 All jobs are executed on bastion, which is a pre-configured enviroment.
 Make sure your bastion can reach your job dependencies.
