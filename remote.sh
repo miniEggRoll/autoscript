@@ -1,5 +1,5 @@
-git clone git@github.com:minieggroll/travis-gce
-cd travis-gce/jobs
+git clone git@github.com:minieggroll/autoscript
+cd autoscript/jobs
 for VARIABLE in `find . -maxdepth 1 -mindepth 1 -type d \! -exec test -e '{}/report.log' \; -print`
 do
     cd $VARIABLE
